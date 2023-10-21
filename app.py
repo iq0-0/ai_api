@@ -5,7 +5,7 @@ from read_face import get_attendance
 app = Flask(__name__) 
   
 
-@app.route('/', methods = ['GET', 'POST']) 
+@app.route('/', methods = ['GET', 'POST'])
 def home(): 
     data = "Hello World!"
     return jsonify({'data': data}) 
@@ -25,7 +25,6 @@ async def take_image():
     return jsonify(data) 
 
   
-# driver function 
 if __name__ == '__main__': 
-  
-    app.run(debug = True) 
+  # Set debug to True for development, consider changing it to False in production
+  app.run(debug = True) 
