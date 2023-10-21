@@ -27,4 +27,4 @@ async def take_image():
   
 if __name__ == '__main__': 
   # Set debug to True for development, consider changing it to False in production
-  app.run(debug = True) 
+  app.run(debug = True, port=3150) 
